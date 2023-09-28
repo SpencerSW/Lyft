@@ -101,7 +101,7 @@ async function darkMode() {
 const parallax = document.getElementById("hero-img");
 
 window.addEventListener("scroll", function () {
-    let offset = window.pageYOffset;
+    let offset = window.scrollY;
     parallax.style.backgroundPositionY = offset * 0.5 - 35 + "px";
 });
 
